@@ -26,10 +26,12 @@ function request() {
   xhr.open("GET", api, false);
 
   xhr.onload = function () {
-    const response = JSON.parse(xhr.responseText);
-    let content = response.content.split(""); // array of chars
-    quotesDisplay.innerHTML = createHTML(content);
-    startTimer();
+    if (xhr.status == 200) {
+      const response = JSON.parse(xhr.responseText);
+      let content = response.content.split(""); // array of chars
+      quotesDisplay.innerHTML = createHTML(content);
+      startTimer();
+    }
   };
   xhr.send();
 }
