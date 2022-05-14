@@ -1,6 +1,6 @@
 console.log("Included");
 
-const api = "http://api.quotable.io/random";
+const api = "https://api.quotable.io/random";
 const quotesDisplay = document.querySelector("#quotesDisplay");
 const txtArea = document.querySelector("#textArea");
 const timer = document.querySelector("#timer");
