@@ -30,9 +30,13 @@ function request() {
       const response = JSON.parse(xhr.responseText);
       let content = response.content.split(""); // array of chars
       quotesDisplay.innerHTML = createHTML(content);
+      startTimer();
     }
-    startTimer();
   };
+  
+  if (xhr.status != 200) {
+    startTimer();
+  }
   xhr.send();
 }
 
