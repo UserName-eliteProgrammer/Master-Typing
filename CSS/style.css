@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(165, 14, 165);
+}
+
+#timer {
+  color: yellow;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+#main {
+  display: flex;
+  background-color: rgb(228, 228, 41);
+  min-height: 60vh;
+  width: 60%;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#quotesTyping {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#quotesDisplay {
+  height: 50%;
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#textArea {
+  height: 100%;
+  width: 80%;
+  resize: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgb(128, 122, 122);
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+#textArea:focus {
+  border: 1px solid black;
+}
+
+.matched {
+  color: green;
+}
+
+.notMatched {
+  color: red;
+  text-decoration-line: underline;
+}
