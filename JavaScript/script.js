@@ -33,10 +33,6 @@ function request() {
       startTimer();
     }
   };
-  
-  if (xhr.status != 200) {
-    startTimer();
-  }
   xhr.send();
 }
 
