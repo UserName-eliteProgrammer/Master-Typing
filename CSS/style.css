@@ -10,18 +10,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(165, 14, 165);
+  background: linear-gradient(to bottom, rgb(240, 188, 18), rgb(240, 53, 28));
 }
 
 #timer {
-  color: yellow;
+  color: rgba(238, 255, 0, 0.931);
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #main {
   display: flex;
-  background-color: rgb(228, 228, 41);
+  background-color: rgb(246, 202, 120);
   min-height: 60vh;
   width: 60%;
   margin-top: 5vh;
@@ -31,6 +31,7 @@
   align-items: center;
   box-sizing: border-box;
   border-radius: 6px;
+  box-shadow: 3px 3px 10px 8px rgb(29, 28, 28, 0.3);
 }
 
 #quotesTyping {
@@ -45,7 +46,7 @@
 #quotesDisplay {
   height: 50%;
   width: 80%;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   padding: 20px;
   box-sizing: border-box;
